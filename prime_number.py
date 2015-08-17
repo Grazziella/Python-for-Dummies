@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+# a neanderthal way:
 def prime_number(x):
 
 	"""Return True if the number is prime, otherwise False!"""
@@ -9,10 +9,20 @@ def prime_number(x):
 		return 'True'
 
 	elif x % 2 == 0 or x % 3 == 0 or x % 5 == 0 or x % 7 == 0 or x % 11 == 0:
-		return 'False'
+		return False
 
 	else:
-		return 'True'
+		return True
 
-if __name__ == '__main__':
-	print(prime_number(2))
+# another way:
+
+def prime_number(num):
+
+	if num < 2:
+		return False
+
+	for i in range(2, num):
+		if num % i == 0:
+			return False
+
+	return True
