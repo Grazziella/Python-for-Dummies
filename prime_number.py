@@ -8,7 +8,7 @@ def prime_number(x):
 	if x == 2 or x == 3 or x == 5 or x == 7:
 		return 'True'
 
-	elif x % 2 == 0 or x % 3 == 0 or x % 5 == 0 or x % 7 == 0:
+	elif x % 2 == 0 or x % 3 == 0 or x % 5 == 0 or x % 7 == 0 or x % 11 == 0:
 		return 'False'
 
 	else:
