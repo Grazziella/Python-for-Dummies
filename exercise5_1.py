@@ -24,7 +24,7 @@ def all_in_one():
 			break
 		
 		try:
-			num = int(num) or num == 'done'
+			num = int(num)
 			total = total + int(num)
 			count = count + 1
 			average = total / count
