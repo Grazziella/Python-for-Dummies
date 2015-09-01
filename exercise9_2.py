@@ -14,8 +14,8 @@ def dow():
 
 	f = raw_input('Enter a file: ')
 	opf = open(f)
-	dow = dict()
-	mail_list = list()
+	dow = {}
+	mail_list = []
 
 	for line in opf:
 
