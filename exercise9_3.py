@@ -16,8 +16,8 @@ def sender():
 
 	f = raw_input('Enter a file: ')
 	opf = open(f)
-	mail_l = list()
-	mail_d = dict()
+	mail_l = []
+	mail_d = {}
 
 	for line in opf:
 
